@@ -1,0 +1,1 @@
+document.getElementById('field-btn')?.addEventListener('click', function () { this.classList.toggle('open') });
