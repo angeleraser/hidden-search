@@ -1,0 +1,60 @@
+@import url("./reset.min.css");
+
+:root {
+  --white: #fff;
+  --black: #333;
+  --gray: #999;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+  min-width: 360px;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  font-family: sans-serif;
+}
+
+.field-input,
+.field-btn {
+  border: none;
+  outline: none;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.field-input {
+  padding: 0;
+  width: 0px;
+  transition: 0.3s all;
+}
+
+.field-input,
+.field-input::placeholder {
+  font-size: 18px;
+}
+
+.field-input::placeholder {
+  color: var(--gray);
+}
+
+.field-btn {
+  cursor: pointer;
+  line-height: 1;
+  padding: 12px;
+  font-size: 24px;
+}
+
+.field-btn:focus + .field-input,
+.field-input:focus {
+  padding-left: 12px;
+  width: 260px;
+}
